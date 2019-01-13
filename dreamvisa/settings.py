@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Mine
+    'tinymce',
+    'countries.apps.CountriesConfig',
     'blog.apps.BlogConfig',
 ]
 
@@ -141,10 +143,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'dreamvisa/static/')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/url/'
 
 #jalali format
@@ -154,6 +156,7 @@ JALALI_DATE_DEFAULTS = {
         'date': '%y/%m/%d',
         'datetime': '%H:%M:%S _ %y/%m/%d',
     },
+
     'Static': {
         'js': [ # prefix address is 'admin/'
             'js/django_jalali.min.js',
@@ -204,9 +207,9 @@ TINYMCE_DEFAULT_CONFIG = {
     'statusbar': True,
     }
 
-
-
-try:
-    from local_settings import *
-except ImportError:
-    pass
+#
+#
+# try:
+#     from local_settings import *
+# except ImportError:
+#     pass
