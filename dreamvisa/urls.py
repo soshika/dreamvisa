@@ -19,6 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 import countries.views
+from . import views
 
 urlpatterns = [
     path('', countries.views.home, name='home'),
@@ -26,5 +27,6 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('countries/', include('countries.urls')),
     path('visa/', include('visa.urls')),
+    path('about/', views.about, name='about'),
     path('tinymce/', include('tinymce.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
