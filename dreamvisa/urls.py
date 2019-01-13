@@ -28,5 +28,6 @@ urlpatterns = [
     path('countries/', include('countries.urls')),
     path('visa/', include('visa.urls')),
     path('about/', views.about, name='about'),
+    path('contact/', include('contacts.urls')),
     path('tinymce/', include('tinymce.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

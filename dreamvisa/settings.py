@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'countries.apps.CountriesConfig',
     'blog.apps.BlogConfig',
     'visa.apps.VisaConfig',
+    'contacts.apps.ContactsConfig',
 ]
 
 MIDDLEWARE = [
