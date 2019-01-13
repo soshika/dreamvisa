@@ -18,9 +18,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+import countries.views
+
 urlpatterns = [
+    path('', countries.views.home, name='home'),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     path('countries/', include('countries.urls')),
+    path('visa/', include('visa.urls')),
     path('tinymce/', include('tinymce.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

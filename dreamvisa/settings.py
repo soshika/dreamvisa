@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'tinymce',
     'countries.apps.CountriesConfig',
     'blog.apps.BlogConfig',
+    'visa.apps.VisaConfig',
 ]
 
 MIDDLEWARE = [
