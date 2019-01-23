@@ -36,7 +36,10 @@ class Blog(models.Model):
         verbose_name = _('Blog')
         verbose_name_plural = _('Blogs')
 
-#
+
+# TODO: Add Tag model here !
+
+# TODO: Add Comment model here !
 # class Comment(models.Model):
 #     name = models.CharField(max_length=127)
 #     email = models.EmailField()
