@@ -6,7 +6,8 @@ from tinymce import HTMLField
 
 class Country(models.Model):
     country = models.CharField(max_length=255)
-    image = models.FileField(upload_to='images/countries/', verbose_name=_('Image'), default=None)
+    image = models.ImageField(upload_to='images/countries/', verbose_name=_('Image'), default=None)
+    flag_image = models.FileField(upload_to='images/countries/', verbose_name=_('FlagImage'), default=None)
     summary = models.CharField(max_length=255, verbose_name=_('Summary'), default='')
     description = HTMLField('Content')
 

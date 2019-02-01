@@ -10,8 +10,10 @@ from blog.models import Blog
 def home(request):
     last_blogs = Blog.objects.order_by('-id')[:3][::-1]
     last_blogs = reversed(last_blogs)
+    four_country = Country.objects.order_by('-id')[:3][::-1]
 
-    return render(request, 'countries/index.html', {'blogs': last_blogs})
+    return render(request, 'countries/index.html', {'blogs': last_blogs,
+                                                    'all_country': four_country})
 
 
 def allcountries(request):

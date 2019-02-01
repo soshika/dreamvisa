@@ -3,8 +3,8 @@ from .models import Country
 
 
 class CountryAdmin(admin.ModelAdmin):
-    fields = ['country', 'summary', 'image', 'description']
-    list_display = ['country', 'summary', 'description']
+    fields = ['country', 'summary', 'image', 'flag_image', 'description']
+    list_display = ['country', 'summary', 'image', 'flag_image', 'description']
     search_fields = ['country']
 
 
