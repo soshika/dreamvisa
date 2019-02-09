@@ -110,8 +110,8 @@
                 <div class="row">
                     {% for country in all_country %}
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="country-img-thumbnail">
-                                <div class="country-img"><a href="#"><img src="{{ country.image.url }}" alt="" class="img-responsive"></a>
+                            <div class="country-img-thumbnail" style="font-family: 'B yekan';">
+                                <div class="country-img"><a href="{% url 'country-detail' country.id %}"><img src="{{ country.image.url }}" alt="" class="img-responsive"></a>
                                     <span class="country-flag-icon"><img src="{{ country.flag_image.url }}" alt=""></span>
                                 </div>
                                 <div class="country-content">
