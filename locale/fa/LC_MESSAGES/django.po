@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-13 20:21+0330\n"
+"POT-Creation-Date: 2019-02-01 13:48+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,38 +18,80 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: blog/models.py:21
+#: blog/models.py:21 visa/models.py:11
 msgid "Title"
-msgstr ""
+msgstr "عنوان"
 
-#: blog/models.py:22 countries/models.py:10
+#: blog/models.py:22 countries/models.py:11 visa/models.py:12
 msgid "Summary"
-msgstr ""
+msgstr "خلاصه"
 
-#: blog/models.py:24 countries/models.py:9
+#: blog/models.py:24 countries/models.py:9 visa/models.py:10
 msgid "Image"
-msgstr ""
+msgstr "تصویر"
 
 #: blog/models.py:25
 msgid "PublicDate"
-msgstr ""
+msgstr "تاریخ ایجاد"
 
 #: blog/models.py:36
 msgid "Blog"
-msgstr ""
+msgstr "وبلاگ"
 
 #: blog/models.py:37
 msgid "Blogs"
+msgstr "وبلاگ"
+
+#: contacts/models.py:6
+msgid "Name"
 msgstr ""
 
-#: countries/models.py:17
-msgid "Country"
+#: contacts/models.py:7
+msgid "Phone"
 msgstr ""
+
+#: contacts/models.py:8
+msgid "Email"
+msgstr ""
+
+#: contacts/models.py:9
+msgid "Subject"
+msgstr ""
+
+#: contacts/models.py:10
+msgid "Message"
+msgstr ""
+
+#: contacts/models.py:16
+msgid "Contact"
+msgstr ""
+
+#: contacts/models.py:17
+msgid "Contacts"
+msgstr ""
+
+#: countries/models.py:10
+#, fuzzy
+#| msgid "Image"
+msgid "FlagImage"
+msgstr "تصویر"
 
 #: countries/models.py:18
+msgid "Country"
+msgstr "کشور"
+
+#: countries/models.py:19
 msgid "Countries"
+msgstr "کشورها"
+
+#: dreamvisa/settings.py:133
+msgid "Persian"
+msgstr "پارسی"
+
+#: visa/models.py:19
+msgid "Visa"
 msgstr ""
 
-#: dreamvisa/settings.py:131
-msgid "Persian"
+#: visa/models.py:20
+msgid "Visas"
 msgstr ""
